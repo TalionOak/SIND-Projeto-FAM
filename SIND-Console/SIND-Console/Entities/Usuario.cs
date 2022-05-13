@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SIND_Console.Entities
+﻿namespace SIND_Console.Entities
 {
- public class Usuario
+  public class Usuario
   {
     public string Nome { get; set; }
     public string Senha { get; set; }
