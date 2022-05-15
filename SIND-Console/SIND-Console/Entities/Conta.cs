@@ -8,6 +8,7 @@ namespace SIND_Console.Entities
     public EnumTipo Tipo { get; set; }
     public double Valor { get; set; }
     public bool EstaPaga { get; set; }
+    public string Data { get; set; }
 
     public string CodigoDeBarras { get; set; }
 
@@ -19,6 +20,12 @@ namespace SIND_Console.Entities
       this.EstaPaga = EstaPaga;
       Random randNum = new Random();
       CodigoDeBarras = $"{randNum.Next()}{randNum.Next()}{randNum.Next()}";
+    }
+
+    public Conta SetData(string data)
+    {
+      this.Data = data;
+      return this;
     }
   }
 }
